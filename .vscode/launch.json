@@ -1,0 +1,50 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      //"program": "${workspaceFolder}/build/src/main.js",
+      "program": "${workspaceFolder}/build/src/lib/socket-io/_exemples/bridge/client.js",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program - with debug",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/build/src/main.js",
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ],
+      "preLaunchTask": "npm: build",
+      "stopOnEntry": true,
+      "smartStep": true,
+      "runtimeArgs": [
+        "--nolazy"
+      ],
+      "env": {
+        "TYPESCRIPT_STARTER_REPO_URL": "${workspaceFolder}"
+      },
+      //"console": "externalTerminal"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach Program",
+      "port": 9229,
+      "processId": "714"
+    }
+  ]
+}
