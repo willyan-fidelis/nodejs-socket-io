@@ -12,7 +12,8 @@ async function main(){
 
     server.listen(Number(port) || 3000,(type,room,id,from_user,...data)=>{
         //remote_conn_socket.send(room,...data)
-        remote_conn_socket.forward(from_user,room,...data)
+        remote_conn_socket.forward(from_user,room,...data);
+        return true;
     })
 
     remote_conn_socket.join(room_name,(id,user,...data)=>{

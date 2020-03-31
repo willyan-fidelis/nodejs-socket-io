@@ -7,6 +7,7 @@ async function main(){
 
     server.listen(Number(port) || 4000,(type,room,id,user,...data)=>{
         //console.log(type,room,id,user,...data)
+        return true;
     })
 }
 
