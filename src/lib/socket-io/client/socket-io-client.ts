@@ -15,7 +15,7 @@ export enum SocketIOClientMsgTypes{
  */
 export class SocketIOClient{
 
-    private socket:Socket;
+    public socket:Socket;
     //private user:string;
     
     constructor(ip:string, port:number,private user:string){
@@ -49,12 +49,12 @@ export class SocketIOClient{
      * @param {(data:any) => void} callback - The callback that recive messages from room
      * @returns {void}
      */
-    public join(room:string,callback: (id:string,user:string,...args: any[]) => void):void{
+    public join(room:string,callback: (id:string,user:string,...args: any[]) => void,receiveMsgFromYourself?:boolean):void{
         
         this.socket.emit(SocketIOClientMsgTypes.join_room,room);
         this.socket.on(room, (socket_id,from_user,...args)=>{
-            //console.log(args)
-            if(this.socket.id === socket_id){return}
+            //console.log(receiveMsgFromYourself)
+            if(this.socket.id === socket_id){if(!receiveMsgFromYourself){return}}
             callback(socket_id,from_user,...args)
         });
         
