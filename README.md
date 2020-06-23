@@ -73,10 +73,10 @@ Code in a Minute - SocktIO NodeJS
     - Start local server:
         - yarn bridge-local-server 3000
     - Start mutiples clients(Some local(3000 port) others remote(4000 port)):
-        - yarn bridge-client-msg 3000 Jonh
-        - yarn bridge-client-msg 3000 William
-        - yarn bridge-client-msg 4000 Eduardo
-        - yarn bridge-client-msg 4000 Maria
+        - yarn bridge-client-msg 192.168.15.26 3000 Jonh
+        - yarn bridge-client-msg 192.168.15.26 3000 William
+        - yarn bridge-client-msg 192.168.15.26 4000 Eduardo
+        - yarn bridge-client-msg 192.168.15.26 4000 Maria
     - Send messages from each client:
         - Open  the 'Jonh 'console and type 'Hello maria, I am Jonh', so enter!
         - Open  the 'Maria 'console and type 'Hi John, I am Maria and like to meet you!', so enter!
