@@ -8,9 +8,9 @@ https://gist.github.com/rxaviers/7360908
 Code in a Minute - SocktIO NodeJS
 ===
 
-:tv: Hand On - YouTube
+:tv: Hands On - YouTube
 ---
-[![Hand On](https://img.youtube.com/vi/SzITWK9nu3M/0.jpg)](https://www.youtube.com/watch?v=SzITWK9nu3M)
+[![Hands On](https://img.youtube.com/vi/SzITWK9nu3M/0.jpg)](https://www.youtube.com/watch?v=SzITWK9nu3M)
 ---
 
 ###### tags: `Read-me` `Step-by-step` `#CodeInMinutes` `NodeJS` `SocketIO`
