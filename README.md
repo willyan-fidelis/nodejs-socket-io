@@ -8,6 +8,7 @@ Code in a Minute - SocktIO NodeJS
 ===
 
 :tv: Hand On - YouTube
+---
 [![Hand On](https://img.youtube.com/vi/SzITWK9nu3M/0.jpg)](https://www.youtube.com/watch?v=SzITWK9nu3M)
 ---
 
