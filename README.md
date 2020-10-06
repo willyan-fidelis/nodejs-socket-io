@@ -3,6 +3,7 @@ More info about markdown:
 https://hackmd.io/
 https://guides.github.com/features/mastering-markdown/
 https://stackoverflow.com/questions/11804820/how-can-i-embed-a-youtube-video-on-github-wiki-pages
+https://gist.github.com/rxaviers/7360908
  -->
 Code in a Minute - SocktIO NodeJS
 ===
